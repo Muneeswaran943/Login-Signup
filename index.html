@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="Login-Signup">
+            <button class="log active" id="login-log">Login</button>
+            <button class="log" id="signup-log">Sign Up</button>
+        </div>
+        <form id="login-form" class="form active input-group">
+            <input type="text" placeholder="Username or Email id" id="login-username">
+            <span class="error" id="login-username-error"></span>
+            
+            <input type="password" placeholder="Password" id="login-password">
+            <span class="error" id="login-password-error"></span>
+            
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        
+        <form id="signup-form" class="form">
+            <input type="text" placeholder="Username" id="signup-username">
+            <span class="error" id="signup-username-error"></span>
+            
+            <input type="email" placeholder="Email id" id="signup-email">
+            <span class="error" id="signup-email-error"></span>
+            
+            <input type="password" placeholder="Password" id="signup-password">
+            <span class="error" id="signup-password-error"></span>
+            
+            <input type="password" placeholder="Confirm Password" id="signup-confirm-password">
+            <span class="error" id="signup-confirm-password-error"></span>
+            
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
